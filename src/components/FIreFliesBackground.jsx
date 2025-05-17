@@ -35,7 +35,6 @@ const FIreFliesBackground = () => {
                     left: firefly.left,
                     animation: `move ${firefly.animationDuration} infinite alternate`
                 }}>
-
                 </div>
             })
         }

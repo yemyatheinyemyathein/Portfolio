@@ -31,7 +31,7 @@ export default function Form() {
 
   const sendEmail = (params) => {
     const toastId = toast.loading("Sending your message, please wait...")
-    emailjs
+      emailjs
       .send(
         process.env.NEXT_PUBLIC_SERVICE_ID,
         process.env.NEXT_PUBLIC_TEMPLATE_ID,
@@ -39,7 +39,7 @@ export default function Form() {
         {
           publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
           limitRate: {
-            throttle: 5000, // means can't send more then 1 mail per 5 seconds
+            throttle: 10000, // means can't send more then 1 mail per 10 seconds
           },
         }
       )
