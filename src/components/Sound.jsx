@@ -5,7 +5,7 @@ import React, { useRef, useState } from "react";
 
 const Sound = () => {
   const audioRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
 
   const toggle = () => {
     setIsPlaying(!isPlaying);
